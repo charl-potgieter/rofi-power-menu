@@ -250,8 +250,8 @@ else
                 then
                     # Ask for confirmation
                     echo -e "\0prompt\x1fAre you sure"
-                    echo -e "${confirmationMessages[$entry]}\0icon\x1f${icons[$entry]}"
                     echo -e "${confirmationMessages[cancel]}\0icon\x1f${icons[cancel]}"
+                    echo -e "${confirmationMessages[$entry]}\0icon\x1f${icons[$entry]}"
                     exit 0
                 fi
             done
